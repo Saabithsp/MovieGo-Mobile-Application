@@ -1,9 +1,11 @@
 package com.example.movies.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
@@ -32,24 +34,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView.Adapter adapterBestMovies,adpaterUpcomming,adapterCategory;
+    private RecyclerView.Adapter adapterBestMovies, adpaterUpcomming, adapterCategory;
     private RequestQueue mRequestQueue;
-    private StringRequest mStringRequest,mStringRequest2,mStringRequest3;
-    private ProgressBar loading1,loading2,loading3;
-    private RecyclerView recyclerViewBestMovies,recyclerviewUpcomming,recyclerviewCategory;
+    private StringRequest mStringRequest, mStringRequest2, mStringRequest3;
+    private ProgressBar loading1, loading2, loading3;
+    private RecyclerView recyclerViewBestMovies, recyclerviewUpcomming, recyclerviewCategory;
     private ViewPager2 viewPager2;
+    private ImageView profileImg;
     private Handler slideHandler = new Handler();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        profileImg = findViewById(R.id.profilePicImg);
+
 
         initView();
         banners();
         sendRequestBestMovies();
         sendRequestUpComming();
         sendRequestCategory();
+
+        profileImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
+
 
     private void sendRequestBestMovies() {
         mRequestQueue = Volley.newRequestQueue(this);
@@ -78,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             recyclerviewUpcomming.setAdapter(adpaterUpcomming);
         }, volleyError -> {
             loading3.setVisibility(View.GONE);
-            Log.i("UiLover","onErrorResponse:"+ volleyError.toString());
+            Log.i("MoviesApp HCI","onErrorResponse:"+ volleyError.toString());
         });
         mRequestQueue.add(mStringRequest3);
     }

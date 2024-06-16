@@ -64,7 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                     String email,password,name,dob,gender;
-                    String documentId = "BookNestRecords";
+                    String documentId = "Movies";
                     email = String.valueOf(emailEdt.getText());
                     name = String.valueOf(nameEdt.getText());
                     password = String.valueOf(passEdt.getText());
@@ -112,7 +112,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
     public void updateFirestoreDocument(String documentId, String email, String name, String password) {
         // Create a reference to the document with the specified ID
-        DocumentReference docRef = db.collection("BookNest").document(documentId);
+        DocumentReference docRef = db.collection("MovieGo").document(documentId);
 
         // Create a Java object to hold the data
         User user = new User( email, name, password);
