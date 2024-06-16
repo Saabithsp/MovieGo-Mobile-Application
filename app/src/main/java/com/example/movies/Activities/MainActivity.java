@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar loading1, loading2, loading3;
     private RecyclerView recyclerViewBestMovies, recyclerviewUpcomming, recyclerviewCategory;
     private ViewPager2 viewPager2;
-    private ImageView profileImg;
+    private ImageView profileImg,expImg;
     private Handler slideHandler = new Handler();
 
 
@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        profileImg = findViewById(R.id.profilePicImg);
-
+        profileImg = findViewById(R.id.profiePicImage);
+        expImg = findViewById(R.id.explorerImg);
 
         initView();
         banners();
@@ -66,6 +66,16 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        expImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 
 
@@ -80,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             recyclerViewBestMovies.setAdapter(adapterBestMovies);
         }, volleyError -> {
             loading1.setVisibility(View.GONE);
-            Log.i("UiLover","onErrorResponse:"+ volleyError.toString());
+            Log.i("MovieGo","onErrorResponse:"+ volleyError.toString());
         });
         mRequestQueue.add(mStringRequest);
     }

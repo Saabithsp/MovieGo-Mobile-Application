@@ -30,33 +30,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="152dp"
-        android:layout_marginTop="200dp"
-        android:background="@color/material_dynamic_tertiary20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        tools:ignore="MissingConstraints">
-
-        <Button
-            android:id="@+id/logoutBtn"
-            android:layout_width="134dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="154dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="154dp"
-            android:text="Log Out"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.515"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.281" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <TextView
         android:id="@+id/textView11"
         android:layout_width="73dp"
@@ -85,8 +58,8 @@
 
     <TextView
         android:id="@+id/showEmailTxt"
-        android:layout_width="171dp"
-        android:layout_height="32dp"
+        android:layout_width="225dp"
+        android:layout_height="38dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:fontFamily="sans-serif-black"
@@ -147,6 +120,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/showPswdTxt" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="207dp"
+        android:background="@color/material_dynamic_tertiary20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteBtn"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="134dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="154dp"
+            android:text="Log Out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.281" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
