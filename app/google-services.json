@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "969567847025",
+    "project_id": "register-login-firebase-d2462",
+    "storage_bucket": "register-login-firebase-d2462.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969567847025:android:470b54df8f6af60b4311d0",
+        "android_client_info": {
+          "package_name": "com.example.movies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2zZP8ZVYRYSiw-tdGr1RwfgSy4grTlcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

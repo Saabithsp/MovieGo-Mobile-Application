@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_blue"
+    android:background="@color/dark_brown"
     tools:context=".Activities.DetailActivity" >
 
     <androidx.core.widget.NestedScrollView
@@ -118,7 +118,8 @@
                 android:layout_marginBottom="16dp"
                 android:text="TextView"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="25sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
                 app:layout_constraintEnd_toEndOf="@+id/constraintLayout4"
                 app:layout_constraintStart_toStartOf="@+id/constraintLayout4" />
@@ -141,7 +142,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Summary"
                 android:textColor="@color/yellow"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/genreView" />
 
@@ -165,7 +166,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Actors"
                 android:textColor="@color/yellow"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/textView31"
                 app:layout_constraintTop_toBottomOf="@+id/movieSummary" />
 
