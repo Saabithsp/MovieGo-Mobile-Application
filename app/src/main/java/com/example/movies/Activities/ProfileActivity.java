@@ -47,8 +47,19 @@ public class ProfileActivity extends AppCompatActivity {
         logoutButton = findViewById(R.id.logoutBtn);
         deleteButton = findViewById(R.id.deleteBtn);
 
-        logoutButton.setOnClickListener(v -> logoutUser());
-        deleteButton.setOnClickListener(v -> deleteUserDocument(currentUserEmail));
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteUserDocument(currentUserEmail);
+            }
+        });
+
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                logoutUser();
+            }
+        });
 
         retrieveUserData(currentUserEmail);
     }
@@ -109,7 +120,7 @@ public class ProfileActivity extends AppCompatActivity {
         });
     }
 
-//deleting authentication
+    //deleting authentication
     private void deleteUserAccount() {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
@@ -124,7 +135,7 @@ public class ProfileActivity extends AppCompatActivity {
         }
     }
 
-    private void logoutUser() {
+    private void logoutUser () {
         mAuth.signOut();
         Toast.makeText(ProfileActivity.this, "Logged out successfully", Toast.LENGTH_SHORT).show();
 
