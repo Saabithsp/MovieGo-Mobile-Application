@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide;
 import com.example.movies.R;
 
 import java.util.List;
-public class ActorsListAdapter extends RecyclerView.Adapter<ActorsListAdapter.ViewHolder> {
+        public class ActorsListAdapter extends RecyclerView.Adapter<ActorsListAdapter.ViewHolder> {
     List<String> images;
     Context context;
 

@@ -1,8 +1,8 @@
 package com.example.movies.Adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,7 +37,7 @@ public class FilmListAdapter extends RecyclerView.Adapter<FilmListAdapter.viewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FilmListAdapter.viewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull FilmListAdapter.viewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.titleTxt.setText(items.getData().get(position).getTitle());
         RequestOptions requestOptions = new RequestOptions();
         requestOptions=requestOptions.transform(new CenterCrop(),new RoundedCorners(30));
@@ -69,7 +69,7 @@ public class FilmListAdapter extends RecyclerView.Adapter<FilmListAdapter.viewHo
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             titleTxt=itemView.findViewById(R.id.textView17);
-            pic=itemView.findViewById(R.id.pic);
+            pic=itemView.findViewById(R.id.moviePic);
         }
     }
 }

@@ -7,7 +7,7 @@
     android:layout_margin="6dp">
 
     <ImageView
-        android:id="@+id/pic"
+        android:id="@+id/moviePic"
         android:layout_width="140dp"
         android:layout_height="180dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,8 +28,8 @@
         android:layout_marginBottom="8dp"
         android:lines="2"
         android:maxLines="2"
-        app:layout_constraintEnd_toEndOf="@+id/pic"
-        app:layout_constraintStart_toStartOf="@+id/pic"
-        app:layout_constraintTop_toBottomOf="@+id/pic" />
+        app:layout_constraintEnd_toEndOf="@+id/moviePic"
+        app:layout_constraintStart_toStartOf="@+id/moviePic"
+        app:layout_constraintTop_toBottomOf="@+id/moviePic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
