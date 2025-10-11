@@ -6,6 +6,8 @@ Movie Go is a collaborative Android app project built by our team to help users 
 ## 👥 Team Members
 - M.S.M.Saabith
 - B.A.Binuli Vihara
+- M.Farhan
+- S.S.Weeraman
 
 
 ## ✨ Features
