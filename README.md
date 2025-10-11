@@ -3,7 +3,7 @@
 ## 🌟 Overview
 Movie Go is a collaborative Android app project built by our team to help users explore movies easily and view detailed information. The app connects multiple APIs for real-time data, uses Glide for image loading, GSON for JSON parsing, and integrates Firebase for a reliable backend.
 
-##👥 Team Members
+**👥 Team Members
 - M.S.M.Saabith
 - B.A.Binuli Vihara
 
