@@ -76,11 +76,3 @@ We welcome contributions! To get started:
    git push origin feature-name
    ```
 5. Open a **pull request**.
-
-## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-## 📬 Contact
-For any questions or issues, reach out:
-- **Email:** [saabithsp@gmail.com](mailto:saabithsp@gmail.com)
-- **GitHub:** [saabithsp](https://github.com/saabithsp)
