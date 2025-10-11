@@ -1,7 +1,12 @@
 # 🎬 Movie Go
 
 ## 🌟 Overview
-Movie Go is a feature-rich Android app designed to give users an effortless experience discovering movies and viewing detailed movie information. Leveraging multiple APIs, Glide for smooth image loading and caching, and GSON for JSON parsing, Movie Go also integrates with Firebase to deliver a robust backend setup.
+Movie Go is a collaborative Android app project built by our team to help users explore movies easily and view detailed information. The app connects multiple APIs for real-time data, uses Glide for image loading, GSON for JSON parsing, and integrates Firebase for a reliable backend.
+
+##👥 Team Members
+- M.S.M.Saabith
+- B.A.Binuli Vihara
+
 
 ## ✨ Features
 - **🚀 Efficient Image Loading:** Glide for optimized image loading and caching.
