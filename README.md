@@ -9,7 +9,6 @@ Movie Go is a collaborative Android app project built by our team to help users 
 - M.Farhan
 - S.S.Weeraman
 
-
 ## ✨ Features
 - **🚀 Efficient Image Loading:** Glide for optimized image loading and caching.
 - **🎞️ Movie Data Fetching:** Real-time movie information from multiple APIs.
